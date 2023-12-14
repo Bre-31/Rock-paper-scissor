@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+        #button-1 #button-2 #button-3 {
+            transition-duration: 0.4s;
+        }
+        #button-1:hover{
+            background-color: gray;
+            color: White;
+            font-size: 20px;
+            border-radius: 12px;
+        }
+        #button-2:hover {
+            background-color: yellow;
+            color: White;
+            font-size: 20px;
+            border-radius: 12px;
+        }
+        #button-3:hover {
+            background-color: green;
+            color: White;
+            font-size: 20px;
+            border-radius: 12px;
+        }
+        .flex-container {
+            display: flex;
+            height: 600px;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        
+    </style>
+    
+</head>
+<body style="background-color: darkgrey;">
+    <div class="flex-container">
+        <input id="button-1" type="button" value="rock"></input>
+        <input id="button-2" type="button" value="paper"></input>
+        <input id="button-3" type="button" value="scissors"></input>
+      </div>
+      <div id="result"></div>
+      <script src="script.js"></script>
+</body>
+</html>
