@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container {
+        font-size: 60px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    span{
+        color:blueviolet;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>you can be <span class="auto-type"></span></h1>
+    </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <script>
+            let typed = new Typed(" .auto-type", {
+                strings: ["Rock", "Scissor", "Paper"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
+</body>
+</html>
